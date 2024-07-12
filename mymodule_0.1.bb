@@ -12,7 +12,7 @@ SRC_URI = "git://github.com/embedig/${BPN}.git;branch=main;protocol=https"
 
 S = "${WORKDIR}/git"
 
+KERNEL_MODULE_AUTOLOAD += "mymodule"
+
 # The inherit of module.bbclass will automatically name module packages with
 # "kernel-module-" prefix as required by the oe-core build environment.
-
-#RPROVIDES:${PN} += "kernel-module-${MODULE_NAME}"
